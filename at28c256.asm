@@ -37,7 +37,7 @@
 ;        05/08/2020 : Revised version
 ; 1.1  - 24/08/2020 : Improved parsing of filename
 ; 1.2. - 26/02/2023 : Changed how slots are detected and added support to display extended slots
-       - Changed way how EEPROM is detected and fixed bug that was writting to MSX RAM in some models
+;      - Changed way how EEPROM is detected and fixed bug that was writting to MSX RAM in some models
 ;
 ; Note on this code:
 ; This version does not identify the AT28C256 automatically.
