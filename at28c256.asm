@@ -108,7 +108,7 @@ RAMAD3:     EQU     $F344       ; slotid DOS ram page 3
 ; Start address is $100
 
     org     $100
-    ld    a,$ff
+    ld      a,$ff
     ld      hl,txt_credits
     call    print
     call    resetfcb
@@ -1095,13 +1095,13 @@ param_i:
     jp      nz,param_i_show     ; received slot numnber from cli
             ; Search for the EEPROM for at28show command
 search_cart:
-    call    PRINTNEWLINE
     ld      a,$FF
     ld      (thisslt),a
 search_cart0:
     call    sigslot
     cp      $FF
     ret     z
+    call    PRINTNEWLINE
     call    checkHdr
     jr      c,search_cart0
     call    showcontent
@@ -1293,7 +1293,7 @@ txt_help:		db "Command line options: at28c256 </h | /i | /e> | </s <slot> </r> <
 			db "/f File name with extension, for example game.rom",13,10,0
 txt_credits:		db 13,10,"AT28C256 EEPROM Programmer for MSX",13,10
 			db "v1.4."
-BuildId: db "20230516.046"
+BuildId: db "20230516.047"
 			db 13,10
 			db "RCC (c) 2020-2023",13,10,13,10,0
 
