@@ -1190,10 +1190,10 @@ showcontent0:
     exx
     ld      a,(hl)
     call    PRINTNUMBER
-    ld      a,' '
-    push    bc
-    call    PUTCHAR
-    pop     bc
+    ;ld      a,' '
+    ;push    bc
+    ;call    PUTCHAR
+    ;pop     bc
     inc     hl
     djnz    showcontent0
     call    restore_ram_slots
@@ -1292,7 +1292,7 @@ txt_help:		db "Command line options: at28c256 </h | /i | /e> | </s <slot> </r> <
 			db "/f File name with extension, for example game.rom",13,10,0
 txt_credits:		db 13,10,"AT28C256 EEPROM Programmer for MSX",13,10
 			db "v1.4."
-BuildId: db "20230516.050"
+BuildId: db "20230516.051"
 			db " RCC (c) 2020-2023",13,10,13,10,0
 
 
