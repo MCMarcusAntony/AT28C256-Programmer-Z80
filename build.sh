@@ -1,6 +1,6 @@
 #!/bin/sh
 fname=$1
-set -x
+
 if [ ! -f $fname.asm ]; then
     echo "File not found!"
     exit 1
