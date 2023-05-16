@@ -1253,7 +1253,7 @@ ROM_NEW_INIT: EQU $400A
 
 txt_erasing:		db "Erasing the EEPROM...",0
 txt_slot:		db "Slot ",0
-txt_nextslot:		db "Checking slot ",0
+txt_nextslot:		db "Slot ",0
 txt_ramsearch:		db "Searching for EEPROM",13,10,0
 txt_ramfound:		db "Found writable memory in slot ",0
 txt_ramfoundnoteeprom:	db "Found writable memory but its not the eeprom in slot ",0
@@ -1292,7 +1292,7 @@ txt_help:		db "Command line options: at28c256 </h | /i | /e> | </s <slot> </r> <
 			db "/f File name with extension, for example game.rom",13,10,0
 txt_credits:		db 13,10,"AT28C256 EEPROM Programmer for MSX",13,10
 			db "v1.4."
-BuildId: db "20230516.049"
+BuildId: db "20230516.050"
 			db " RCC (c) 2020-2023",13,10,13,10,0
 
 
