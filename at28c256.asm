@@ -1292,8 +1292,7 @@ txt_help:		db "Command line options: at28c256 </h | /i | /e> | </s <slot> </r> <
 			db "/f File name with extension, for example game.rom",13,10,0
 txt_credits:		db 13,10,"AT28C256 EEPROM Programmer for MSX",13,10
 			db "v1.4."
-BuildId: db "20230516.048"
-			db 13,10
+BuildId: db "20230516.049"
 			db "RCC (c) 2020-2023",13,10,13,10,0
 
 
