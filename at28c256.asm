@@ -1190,10 +1190,6 @@ showcontent0:
     exx
     ld      a,(hl)
     call    PRINTNUMBER
-    ;ld      a,' '
-    ;push    bc
-    ;call    PUTCHAR
-    ;pop     bc
     inc     hl
     djnz    showcontent0
     call    restore_ram_slots
